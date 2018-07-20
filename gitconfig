@@ -1,0 +1,26 @@
+[alias]
+  t  = add
+  tu = add -u
+  br = branch
+  bd = branch -D
+  cm = commit
+  co = checkout
+  cb = checkout -b
+  cp = cherry-pick
+  df = diff
+  fo = fetch origin
+  go = "!f() { git ss && git co -b go && git reset $1 && git co .; }; f > go-out"
+  back = "!f() { git co master --force && git bd go && git sp && rm go-out; }; f > /dev/null"
+  lo = log --oneline
+  mg = merge --no-ff
+  pm = push origin master
+  rh = reset HEAD
+  st = status
+
+  sd = stash drop
+  sl = stash list
+  sp = stash pop
+  ss = stash
+[user]
+[core]
+  editor = vim
