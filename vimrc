@@ -1,3 +1,4 @@
+set nomodeline
 set nu rnu
 set ruler
 colo desert
