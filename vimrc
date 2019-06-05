@@ -18,6 +18,9 @@ set expandtab shiftwidth=2 tabstop=2
 
 filetype plugin on
 
+"trim whitespaces
+autocmd BufWritePost ?* %s@\s\+$@@e
+
 autocmd BufRead,BufNewFile *.hsc setfiletype haskell
 autocmd BufRead,BufNewFile *.plt setfiletype prolog
 
