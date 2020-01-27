@@ -9,6 +9,10 @@ noremap j h
 noremap h k
 noremap k j
 
+noremap <c-w>J <c-w>H
+noremap <c-w>H <c-w>K
+noremap <c-w>K <c-w>J
+
 nmap <silent> <c-l> :wincmd l<CR>
 nmap <silent> <c-j> :wincmd h<CR>
 nmap <silent> <c-h> :wincmd k<CR>
