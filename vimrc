@@ -25,6 +25,10 @@ filetype plugin on
 "trim whitespaces
 autocmd BufWritePost ?* %s@\s\+$@@e
 
+" store undo information
+set undofile
+set undodir=~/.vim/.undohistory/
+
 autocmd BufRead,BufNewFile *.hsc setfiletype haskell
 autocmd BufRead,BufNewFile *.plt setfiletype prolog
 
